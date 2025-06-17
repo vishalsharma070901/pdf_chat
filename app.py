@@ -99,6 +99,7 @@ if api_key:
         conversational_rag_chain = RunnableWithMessageHistory(
             rag_chain,
             get_session_history,
+            
             input_messages_key="input",
             history_messages_key="chat_history",
             output_messages_key="answer"
